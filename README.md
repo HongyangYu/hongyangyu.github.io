@@ -8,5 +8,5 @@ I will share some ideas and experience during my study and work.
 
 ## Thanks
 
-This repository is forked from [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now). <br>
-Thanks a lot that barryclark makes it easier to create a github pages.
+This theme is created by [Simpleyyt/jekyll-theme-next](https://github.com/simpleyyt/jekyll-theme-next). <br>
+Thanks a lot that Simpleyyt create such a elegent github pages theme.
