@@ -1,17 +1,12 @@
-# SinanTalk - moments of serendipity
+# Hongyang's Blog
 
-please visit: [sinantang.github.io](https://sinantang.github.io/)
+This is a [blog](https://hongyangyu.github.io/ "Go to my resume") created by Hongyang.
 
-collection of my previous and current blogs (at the moment mostly in Chinese, but I'm trying to write more in English!)
+I will share some ideas and experience during my study and work.
 
+[Go to my blog](https://hongyangyu.github.io/)
 
-I finally got a chance to reorganise and review my blogs which I've been writing since 2-3 years ago.
-They were riginally published on WeChat Public Space and some on Jianshu.com. With the wish to reach a more diverse readership, I picked a few satisfying articles and put them up on my new personal site now.
+## Thanks
 
-
-#### If you want to know more:
-Writing is part of my life. 
-I write on a broad range of topics, including books, movies, commentary, technology, business and my life. 
-Most recently, I've started a new series *A Developer Guide for Newbies - Starting with Python* to challenge myself. I believe that from our generation on, everyone should and is able to master basic programming skills to explore more undiscovered opportunities of life ahead. 
-
-So far I'm having great fun!
+This repository is forked from [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now). <br>
+Thanks a lot that barryclark makes it easier to create a github pages.
