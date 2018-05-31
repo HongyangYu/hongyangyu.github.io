@@ -76,20 +76,19 @@ There are two reasons why we need the "volatile" keyword.
 
 2. To prohibit instruction reordering and guarantee the happends-before relationship. 
 
-The synchronized block is no visibility guarantee for non-final fields memory visibility. Every thread has its own working memory, and has a copy of variables in the main memory. And all threads have to process the shared variables in their own working memory instead of the main memory. A thread cannot access other thread's working memory. Threads communicate via the main memory. Therefore, when a thread change the value of the shared variable, other threads do not know. Then we say that the shared variable made by a thread is not visible to other thread. Thus, we need the keyword "volatile". The "volatile" keyword can make sure that a given variable is read directly from main memory, and always written back to main memory when updated. Thus, the memory visibility is guaranteed. But we need to notice that the "volatile" keyword works after JDK 1.5. 
-
-![Internal Java Memory Model](https://github.com/HongyangYu/hongyangyu.github.io/blob/master/images/2018-05-31-Singleton-Pattern/java-memory-model-0.png)
+![Internal Java Memory Model](https://raw.githubusercontent.com/HongyangYu/hongyangyu.github.io/master/images/2018-05-31-Singleton-Pattern/java-memory-model-0.png)
 
 Fig 1. Internal Java Memory Model
 
-![Visibility of Shared Objects](https://github.com/HongyangYu/hongyangyu.github.io/blob/master/images/2018-05-31-Singleton-Pattern/java-memory-model-1.png)
+![Visibility of Shared Objects](https://raw.githubusercontent.com/HongyangYu/hongyangyu.github.io/master/images/2018-05-31-Singleton-Pattern/java-memory-model-1.png)
 
 Fig 2. Visibility of Shared Objects
 
-![Bridging The Gap Between The Java Memory Model And The Hardware Memory Architecture](https://github.com/HongyangYu/hongyangyu.github.io/blob/master/images/2018-05-31-Singleton-Pattern/java-memory-model-2.png)
+![Bridging The Gap Between The Java Memory Model And The Hardware Memory Architecture](https://raw.githubusercontent.com/HongyangYu/hongyangyu.github.io/master/images/2018-05-31-Singleton-Pattern/java-memory-model-2.png)
 
 Fig 3. Bridging The Gap Between The Java Memory Model And The Hardware Memory Architecture
 
+The synchronized block is no visibility guarantee for non-final fields memory visibility. Every thread has its own working memory, and has a copy of variables in the main memory. And all threads have to process the shared variables in their own working memory instead of the main memory. A thread cannot access other thread's working memory. Threads communicate via the main memory. Therefore, when a thread change the value of the shared variable, other threads do not know. Then we say that the shared variable made by a thread is not visible to other thread. Thus, we need the keyword "volatile". The "volatile" keyword can make sure that a given variable is read directly from main memory, and always written back to main memory when updated. Thus, the memory visibility is guaranteed. But we need to notice that the "volatile" keyword works after JDK 1.5. 
 
 ```
 public class Singleton {
