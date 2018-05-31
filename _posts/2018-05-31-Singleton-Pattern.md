@@ -78,11 +78,11 @@ There are two reasons why we need the "volatile" keyword.
 
 The synchronized block is no visibility guarantee for non-final fields memory visibility. Every thread has its own working memory, and has a copy of variables in the main memory. And all threads have to process the shared variables in their own working memory instead of the main memory. A thread cannot access other thread's working memory. Threads communicate via the main memory. Therefore, when a thread change the value of the shared variable, other threads do not know. Then we say that the shared variable made by a thread is not visible to other thread. Thus, we need the keyword "volatile". The "volatile" keyword can make sure that a given variable is read directly from main memory, and always written back to main memory when updated. Thus, the memory visibility is guaranteed. But we need to notice that the "volatile" keyword works after JDK 1.5. 
 
-![Internal Java Memory Model](https://github.com/HongyangYu/hongyangyu.github.io/tree/master/images/2018-05-31-Singleton-Pattern/java-memory-model-0.png?raw=true)
+![Internal Java Memory Model](https://github.com/HongyangYu/hongyangyu.github.io/blob/master/images/2018-05-31-Singleton-Pattern/java-memory-model-0.png?raw=true)
 
-![Visibility of Shared Objects](https://github.com/HongyangYu/hongyangyu.github.io/tree/master/images/2018-05-31-Singleton-Pattern/java-memory-model-1.png?raw=true)
+![Visibility of Shared Objects](https://github.com/HongyangYu/hongyangyu.github.io/blob/master/images/2018-05-31-Singleton-Pattern/java-memory-model-1.png?raw=true)
 
-![Bridging The Gap Between The Java Memory Model And The Hardware Memory Architecture](https://github.com/HongyangYu/hongyangyu.github.io/tree/master/images/2018-05-31-Singleton-Pattern/java-memory-model-2.png?raw=true)
+![Bridging The Gap Between The Java Memory Model And The Hardware Memory Architecture](https://github.com/HongyangYu/hongyangyu.github.io/blob/master/images/2018-05-31-Singleton-Pattern/java-memory-model-2.png?raw=true)
 
 ```
 public class Singleton {
