@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elasticsearch Index Introduction (1)
+title: Introduction to Elasticsearch (1)
 date: 2018-05-31
 categories: 
   - Software Development
