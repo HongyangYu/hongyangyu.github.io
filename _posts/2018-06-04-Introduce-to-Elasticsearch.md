@@ -89,7 +89,7 @@ Fig 3. Roaring Bitmaps
 Why Elasticsearch uses 65536 as a block? Because 65536 = 2^16, which is 2 byte and the range of short type. Please notice that in the above picture, it says "If a block has more than 4096 values, encode as a bit set, and otherwise as a simple array using 2 bytes per value". That means if there are more than 4096 ids in a block, Elasticsearch will use the roaring bitmaps. If not, it will use short array and will not compress. The reason why Elasticsearch uses 4096 is that 4096 * 2 bytes = 8192 B < 1KB. The a block will be read at least 1KB during disk seek, so all the values in the block can be got in one disk seek, and then the compress is not neccessary. 
 
 
-![Roaring-Memory](https://raw.githubusercontent.com/HongyangYu/hongyangyu.github.io/master/images/2018-06-04-Introduce-to-Elasticsearch/Roaring-Bitmaps-Memory.png)
+![Roaring-Memory](https://raw.githubusercontent.com/HongyangYu/hongyangyu.github.io/master/images/2018-06-04-Introduce-to-Elasticsearch/Roaring-Memory.png)
 
 Fig 4. Roaring Bitmaps vs Bitmap in Memory
 
